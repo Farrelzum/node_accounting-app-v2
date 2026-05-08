@@ -113,8 +113,8 @@ function createServer() {
     }
 
     const newExpense = {
-      id: +Date.now(),
-      userId: req.body.userId,
+      id: Date.now(),
+      userId: +req.body.userId,
       spentAt: req.body.spentAt,
       title: req.body.title,
       amount: req.body.amount,
